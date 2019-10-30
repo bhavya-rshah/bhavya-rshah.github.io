@@ -1,0 +1,57 @@
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  border-radius: 50%;
+}
+
+
+/* this is for the nav bar */
+ul {
+    list-style-type: none; /* no style on the list so that it wouldn't look wierd as a nav bar*/
+    margin: 0;/*this changes how far it is from the top of the website*/
+    padding: 0;/* This changes how far it is from the sides so it can look more like a title I would recomend keeping it at 0*/
+    overflow: hidden; /* this can add some scroll things or get rid of the nav bar so I reccomend keeping it at hidden*/
+    position: fixed;
+    float:right;
+    
+}
+li {
+    float: right; /* float the things on the nav bar to the right*/
+}
+li a {
+    display: block; /* Used for making the bar more thick ex. more blocky*/
+    color: white;
+    text-align: center; /* this aligns the text to the center*/
+    padding: 20px 20px;/* this is the spacing of each element on the nav bar*/
+    text-decoration: none;/*this gets rid of the underline on a link*/
+    font-size: 20px;/*sets the size of the text*/
+    font-weight: bold;/*sets the weight of the text*/
+    color:white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+
+}
+
+h2{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+
+}
+/* page is done*/
+
+html,body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em 2em;
+  font-size: 20px;
+  color:white;
+  text-align: center;
+}
+

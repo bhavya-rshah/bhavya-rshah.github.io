@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body background="images/bground2.jpg">
+<title>Bhavya's site</title>
+<link rel="stylesheet" href="stylesheet.css">
+<style>
+.flip-box {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-left: 700px;
+  margin-top: 100px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+  <ul>
+  	<li> <a href="https://www.linkedin.com/in/bhavya-shah-371332149"> <img src = "images/linkedin.png" style= "height: 45px; width: 45px; border-radius: 50%; margin-top: -20px"/> </a></li>
+  	<li> <a href="https://github.com/bhavya-rshah"> <img src = "images/github.png" style= "height: 45px; width: 45px; border-radius: 50%; margin-top: -20px"/> </a></li>
+  	<li> <a href="https://www.instagram.com/lilbhavsauce/"> <img src = "images/instagram.png" style= "height: 45px; width: 45px; border-radius: 50%; margin-top: -20px"/> </a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="files/resume.pdf">Resume</a></li>
+    <li><a href="index.html">Home</a></li>
+    
+</ul>
+
+<br></br>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src = "images/access.png" style= "height:300px; width:500px;"/>
+    </div>
+    <div class="flip-box-back">
+      
+      <p> Was the Project leader in the redesign of the African Canadian Continuing Education Society's website. Integrated mailchimp and updated the way the charity accepts donations. Technologies used included Wordpress and AWS.
+       </p>
+       <a href="https://acceskenya.org/"> Check out the site and Contribute to the charity! </a>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src = "images/hand.png" style= "height:300px; width:500px;"/>
+    </div>
+    <div class="flip-box-back">      
+      <p> 
+      	 A python application that analyses 3D scans of models of body parts and classifies them. Also released a research paper on the precision and accuracy of the Structure Sensor that was used to obtain the scans. Project was showcased at the BC Tech Summit 2019 to the Premier of British Columbia.
+       </p>
+       <a href="https://business.facebook.com/BCITComputing/photos/a.505038633002243/1117241901781910/?type=3&theater"> Demonstrating our Project to BC Premier Horgan </a>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <img src = "images/quicklist.png" style= "height:300px; width:500px;"/>
+    </div>
+    <div class="flip-box-back">
+     
+      <p> a NODE.JS Application that allows users to create modify and delete lists. Ideal for families creating shopping lists </p>
+      <a href="http://www.quicklists.info"> View Project </a>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <img src = "images/react.png" style= "height:300px; width:500px;"/>
+    </div>
+    <div class="flip-box-back">
+     
+      <p> A React-Native application which translates an English word to the national language of the country which you are located in based on the IP and then locates on a map all the nearby places (e.g Nearby bars for keyword piwo which was translated to Polish from the English word Beer)</p>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
